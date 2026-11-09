@@ -1,0 +1,1051 @@
+Act as a senior full-stack software architect, UI/UX designer, Python developer, MongoDB database architect, cybersecurity specialist, and AI application developer.
+
+I want you to develop a complete, production-style, full-stack web application titled:
+
+**SMART TECHNICAL SUPPORT UNIVERSITY MANAGEMENT SYSTEM**
+
+The website must have an extremely professional, modern, premium, clean, transparent, and visually impressive design. Do not create an ordinary college management website or a basic ticket management system.
+
+The objective is to develop an intelligent university technical support platform where students, faculty members, and administrators can communicate, report technical problems, generate support tickets, monitor ticket progress, manage university technical resources, and receive intelligent technical assistance.
+
+The application must be fully functional, with real backend integration and MongoDB database connectivity.
+
+==================================================
+1. TECHNOLOGY STACK
+==================================================
+
+Use the following technologies:
+
+Frontend:
+- React.js with Vite
+- HTML5
+- CSS3
+- JavaScript
+- Tailwind CSS
+- Framer Motion for advanced animations
+- Lucide React icons
+- Recharts for analytics and visualization
+- Axios for API integration
+
+Backend:
+- Python
+- FastAPI
+- REST API architecture
+- Python-based file and folder creation
+- Pydantic validation
+- JWT authentication
+- Role-based access control
+
+Database:
+- MongoDB Atlas
+- PyMongo or Motor
+- Proper database collections
+- Database indexing
+- Secure database operations
+
+Email:
+- SMTP integration
+- Gmail App Password support
+- HTML email templates
+- Email OTP verification
+- Welcome email automation
+- Ticket notification emails
+
+Additional technologies:
+- WebSockets for real-time notifications
+- Socket.IO or compatible real-time communication
+- Python background tasks
+- PDF generation
+- QR code generation
+- AI-powered technical support integration
+
+IMPORTANT:
+Use Python scripts for project structure creation, folder creation, file generation, and backend development.
+
+Do not use PHP or Node.js as the backend. Python FastAPI must be the primary backend.
+
+==================================================
+2. PROFESSIONAL UI/UX DESIGN
+==================================================
+
+The website must have a premium university technology platform appearance.
+
+Design inspiration:
+- Modern SaaS dashboards
+- Apple-inspired glassmorphism
+- Linear-style interfaces
+- Modern enterprise support platforms
+- Premium university portals
+
+Professional colour palette:
+
+Primary:
+- Midnight Navy: #101828
+- Deep Blue: #172554
+- Electric Blue: #3B82F6
+
+Secondary:
+- Purple: #8B5CF6
+- Cyan: #06B6D4
+- Emerald: #10B981
+
+Background:
+- #F8FAFC
+- #EEF2FF
+- White transparent glass surfaces
+
+Design requirements:
+
+1. Modern glassmorphism.
+2. Transparent navigation bars.
+3. Beautiful gradient backgrounds.
+4. Animated gradient borders.
+5. Smooth page transitions.
+6. Advanced hover effects.
+7. Premium cards with soft shadows.
+8. Animated sidebar navigation.
+9. Interactive charts and graphs.
+10. Professional typography.
+11. Beautiful loading animations.
+12. Responsive mobile and desktop layouts.
+13. Dark mode and light mode.
+14. Animated notification system.
+15. Modern modal windows.
+16. Skeleton loading effects.
+
+Avoid excessive colours and unnecessary animations.
+
+The website should look like an expensive enterprise SaaS product.
+
+==================================================
+3. LANDING PAGE
+==================================================
+
+Create an impressive landing page containing:
+
+- Premium university support navigation bar.
+- Animated hero section.
+- Professional university technology illustration.
+- Main heading: Smart Technical Support University.
+- Subtitle explaining the platform.
+- Get Started button.
+- Explore Features button.
+- Live support statistics fetched from MongoDB.
+- Technical support service cards.
+- How It Works section.
+- University departments section.
+- AI-powered support section.
+- Ticket management explanation.
+- Testimonials fetched from the database.
+- Frequently Asked Questions.
+- Professional footer.
+
+The landing page must use real backend data.
+
+Do not hardcode fake statistics, ticket counts, user counts, or testimonials.
+
+If the database has no records, show beautiful empty states instead of fake information.
+
+==================================================
+4. PROFESSIONAL LOGIN PAGE
+==================================================
+
+Create an amazing login page with:
+
+- Animated gradient background.
+- Transparent glass login card.
+- University technology illustrations.
+- Email field.
+- Password field.
+- Show/hide password.
+- Remember me.
+- Forgot password.
+- Login button with loading animation.
+- Google authentication integration (optional).
+- Role-aware redirection.
+- Professional error messages.
+- Responsive design.
+
+After successful login, automatically redirect users according to their assigned roles.
+
+ADMIN → Admin Dashboard
+
+FACULTY → Faculty Dashboard
+
+USER/STUDENT → User Dashboard
+
+Never allow users to select or manipulate privileged roles through the frontend.
+
+==================================================
+5. PROFESSIONAL REGISTRATION PAGE
+==================================================
+
+Create separate registration functionality for:
+
+A. Student/User Registration
+B. Faculty Registration
+
+Registration fields for students:
+
+- Full Name
+- University Email
+- Student ID
+- Department
+- Course
+- Year/Semester
+- Phone Number
+- Password
+- Confirm Password
+
+Registration fields for faculty:
+
+- Full Name
+- Official University Email
+- Faculty ID
+- Department
+- Designation
+- Phone Number
+- Password
+- Confirm Password
+
+IMPORTANT SECURITY REQUIREMENTS:
+
+- Do not provide an Admin registration option.
+- Never allow Admin registration through the public registration page.
+- Admin accounts must be created through a secure backend-only process.
+- Never trust a role sent by the frontend.
+- Validate university email domains where configured.
+- Hash passwords securely using Argon2 or bcrypt.
+
+==================================================
+6. EMAIL OTP VERIFICATION
+==================================================
+
+Implement real email OTP verification for students and faculty.
+
+Registration workflow:
+
+STEP 1:
+User completes the registration form.
+
+STEP 2:
+Backend validates all submitted information.
+
+STEP 3:
+Generate a cryptographically secure six-digit OTP.
+
+STEP 4:
+Send OTP to the registered email address.
+
+STEP 5:
+Display a beautiful OTP verification page.
+
+STEP 6:
+User enters the OTP.
+
+STEP 7:
+Backend verifies the OTP.
+
+STEP 8:
+After successful verification, activate the account.
+
+STEP 9:
+Automatically generate the user's first welcome/support ticket.
+
+STEP 10:
+Send a colourful welcome email.
+
+Security requirements:
+
+- OTP expiration after 5 minutes.
+- Maximum verification attempts.
+- Resend OTP with cooldown.
+- Rate limiting.
+- Store OTP securely using hashing.
+- Prevent OTP reuse.
+- Prevent duplicate email registration.
+- Do not activate unverified accounts.
+
+Admin accounts must not require public email OTP registration.
+
+==================================================
+7. AUTOMATED WELCOME EMAIL
+==================================================
+
+After successful student or faculty registration, send a personalised welcome email.
+
+Create a professional HTML email template.
+
+Email design:
+
+- University branding.
+- Animated-style gradient header.
+- Welcome illustration.
+- Personalised greeting.
+- Registration confirmation.
+- Automatically generated ticket ID.
+- Account information.
+- Dashboard access button.
+- Support contact information.
+- Professional footer.
+
+Example:
+
+"Welcome to Smart Technical Support University!
+
+We are delighted to welcome you to our university's intelligent technical support platform.
+
+Your account has been successfully activated.
+
+Your first support ticket has also been generated automatically.
+
+We look forward to making your university technology experience smoother, smarter, and more efficient."
+
+IMPORTANT:
+Email clients often block animations, so create a visually rich email using compatible HTML and CSS with attractive gradients, illustrations, and responsive layouts.
+
+==================================================
+8. AUTOMATIC TICKET GENERATION SYSTEM
+==================================================
+
+This is one of the most important features.
+
+Whenever a student or faculty member successfully registers:
+
+- Automatically create a welcome/onboarding ticket.
+- Generate a unique ticket ID.
+- Save the ticket in MongoDB.
+- Associate it with the registered account.
+- Set initial status to OPEN.
+- Assign an appropriate support category.
+- Display the ticket in the user's dashboard.
+- Send ticket confirmation through email.
+
+Example ticket ID:
+
+STSU-2026-000001
+
+Ticket categories:
+
+- Computer Hardware
+- Software Installation
+- Wi-Fi and Internet
+- Network Connectivity
+- University Portal
+- LMS Issues
+- Email Account Problems
+- Printer Problems
+- Projector Problems
+- Laboratory Equipment
+- Smart Classroom
+- Server Issues
+- Cybersecurity
+- Account Access
+- Other Technical Issues
+
+Ticket statuses:
+
+- OPEN
+- ASSIGNED
+- IN PROGRESS
+- WAITING FOR USER
+- ESCALATED
+- RESOLVED
+- CLOSED
+
+Priority levels:
+
+- LOW
+- MEDIUM
+- HIGH
+- CRITICAL
+
+Implement ticket history and status tracking.
+
+==================================================
+9. THREE SEPARATE ADVANCED DASHBOARDS
+==================================================
+
+Create three completely different dashboards.
+
+Do not simply change the dashboard title based on the role.
+
+Each dashboard must have its own navigation, permissions, components, charts, and functionality.
+
+--------------------------------------------------
+A. ADMIN DASHBOARD
+--------------------------------------------------
+
+Design an advanced enterprise-level administrative dashboard.
+
+Overview:
+
+- Total registered users.
+- Total faculty members.
+- Total technical support tickets.
+- Open tickets.
+- Resolved tickets.
+- Critical tickets.
+- Average resolution time.
+- Department-wise ticket distribution.
+- Monthly ticket trends.
+- Support team performance.
+
+Admin features:
+
+1. User Management
+   - View all students.
+   - Create users.
+   - Edit user information.
+   - Activate/deactivate accounts.
+   - Suspend accounts.
+   - View user activity.
+   - Search and filter users.
+
+2. Faculty Management
+   - Add faculty.
+   - Verify faculty accounts.
+   - Assign departments.
+   - Manage faculty permissions.
+   - Monitor faculty performance.
+
+3. Ticket Management
+   - View all tickets.
+   - Assign tickets to faculty.
+   - Change priority.
+   - Escalate tickets.
+   - Track resolution.
+   - Reopen tickets.
+   - Delete tickets with proper authorization and audit logging.
+
+4. Department Management
+   - Create departments.
+   - Edit departments.
+   - Assign support staff.
+   - View department statistics.
+
+5. Support Team Management
+   - Assign technicians.
+   - Manage workloads.
+   - Track resolution performance.
+
+6. Analytics
+   - Real-time ticket analytics.
+   - Monthly performance reports.
+   - Department-wise reports.
+   - Export reports to PDF and Excel.
+
+7. System Settings
+   - University information.
+   - Email configuration.
+   - Ticket configuration.
+   - Notification settings.
+   - Security settings.
+
+8. Audit Logs
+   - Login history.
+   - User activities.
+   - Ticket modifications.
+   - Administrative actions.
+
+9. Announcements
+   - Publish university announcements.
+   - Send notifications.
+   - Schedule announcements.
+
+10. Backup and Database Monitoring
+   - Database health.
+   - Backup status.
+   - System monitoring.
+
+--------------------------------------------------
+B. FACULTY DASHBOARD
+--------------------------------------------------
+
+Create a professional faculty dashboard.
+
+Overview:
+
+- Assigned tickets.
+- Pending tickets.
+- Resolved tickets.
+- High-priority tickets.
+- Average response time.
+- Recent activities.
+
+Faculty features:
+
+1. Assigned Tickets
+   - View tickets assigned to them.
+   - Accept tickets.
+   - Update ticket status.
+   - Change progress.
+   - Add internal notes.
+   - Request additional information.
+
+2. Ticket Resolution
+   - Add solutions.
+   - Upload supporting documents.
+   - Attach screenshots.
+   - Record resolution details.
+   - Mark tickets as resolved.
+
+3. Student Communication
+   - Real-time messaging.
+   - Ticket comments.
+   - File attachments.
+   - Notifications.
+
+4. Department Support
+   - View department-related tickets.
+   - Filter by category.
+   - Filter by priority.
+
+5. Knowledge Base
+   - Create technical guides.
+   - Publish troubleshooting instructions.
+   - Update existing solutions.
+
+6. Faculty Analytics
+   - Personal ticket performance.
+   - Resolution statistics.
+   - Pending workload.
+   - Monthly activity.
+
+7. Availability Management
+   - Set working hours.
+   - Set availability.
+   - Manage support schedules.
+
+8. Escalation
+   - Escalate unresolved tickets.
+   - Notify administrators.
+
+Faculty members must not access admin-only operations.
+
+--------------------------------------------------
+C. STUDENT/USER DASHBOARD
+--------------------------------------------------
+
+Create an attractive, interactive student dashboard.
+
+Overview:
+
+- Welcome message.
+- Total submitted tickets.
+- Open tickets.
+- In-progress tickets.
+- Resolved tickets.
+- Recent notifications.
+- Latest announcements.
+
+Student features:
+
+1. Create Support Ticket
+   - Ticket title.
+   - Description.
+   - Category.
+   - Priority.
+   - Upload screenshots.
+   - Upload documents.
+   - Submit ticket.
+
+2. My Tickets
+   - View all tickets.
+   - Track ticket status.
+   - View assigned faculty.
+   - View ticket history.
+   - Reopen eligible tickets.
+
+3. Live Ticket Tracking
+   - Timeline interface.
+   - Real-time status updates.
+   - Resolution progress.
+   - Estimated resolution information when available.
+
+4. AI Technical Assistant
+   - Ask technical questions.
+   - Receive troubleshooting instructions.
+   - Search knowledge base.
+   - Suggest relevant solutions.
+   - Recommend the correct support category.
+
+5. University Knowledge Base
+   - Search technical guides.
+   - Browse solutions.
+   - View FAQs.
+   - Read troubleshooting tutorials.
+
+6. Messaging
+   - Communicate with assigned faculty.
+   - Upload attachments.
+   - Receive responses.
+
+7. Notifications
+   - Ticket updates.
+   - Faculty responses.
+   - Announcements.
+   - Important university notices.
+
+8. Profile Management
+   - Update permitted profile details.
+   - Change password.
+   - Update phone number.
+   - View account information.
+
+9. Feedback System
+   - Rate ticket resolution.
+   - Submit feedback.
+   - Provide suggestions.
+
+10. Downloadable Reports
+   - Download ticket history.
+   - Download resolution reports.
+   - Generate PDF summaries.
+
+==================================================
+10. ADVANCED AI TECHNICAL SUPPORT ASSISTANT
+==================================================
+
+Implement an AI-powered technical assistant.
+
+Features:
+
+- Natural language conversations.
+- University technical support questions.
+- Wi-Fi troubleshooting.
+- Software installation guidance.
+- Operating system troubleshooting.
+- Network diagnostics guidance.
+- Printer troubleshooting.
+- University portal assistance.
+- Smart classroom support.
+
+Advanced functionality:
+
+- AI-based ticket categorisation.
+- Automatic priority recommendations.
+- Duplicate ticket detection.
+- Knowledge base recommendations.
+- Suggested ticket descriptions.
+- Automatic ticket summaries.
+- Similar-ticket identification.
+
+Use a real AI API configured through environment variables.
+
+Do not display fake AI responses.
+
+If the AI API is not configured, display a clear service-unavailable message.
+
+The AI must not pretend that a problem has been fixed or that a ticket has been created unless the backend confirms the operation.
+
+==================================================
+11. REAL-TIME NOTIFICATION SYSTEM
+==================================================
+
+Create an advanced toast notification system.
+
+Notification types:
+
+- SUCCESS
+- ERROR
+- WARNING
+- INFO
+- TICKET UPDATE
+- FACULTY RESPONSE
+- NEW ANNOUNCEMENT
+- SECURITY ALERT
+
+Design:
+
+- Glass-style notification cards.
+- Smooth slide-in animations.
+- Professional icons.
+- Progress indicator.
+- Automatic dismissal.
+- Manual close button.
+- Sound notification option.
+- Notification history.
+
+Use WebSockets for real-time notification delivery.
+
+Save important notifications in MongoDB.
+
+==================================================
+12. ADVANCED UNIVERSITY FEATURES
+==================================================
+
+Add the following advanced modules:
+
+1. University IT Asset Management
+   - Computer inventory.
+   - Hardware details.
+   - Software licences.
+   - Asset allocation.
+   - Maintenance history.
+
+2. Laboratory Management
+   - Lab equipment records.
+   - Equipment fault reporting.
+   - Maintenance requests.
+   - Lab availability.
+
+3. Smart Classroom Management
+   - Projector reporting.
+   - Smart board troubleshooting.
+   - Classroom computer support.
+   - Audio/video system support.
+
+4. Network Monitoring
+   - Network incident reporting.
+   - Wi-Fi issue tracking.
+   - Network maintenance announcements.
+
+5. IT Maintenance Scheduler
+   - Maintenance calendar.
+   - Planned downtime.
+   - Maintenance notifications.
+
+6. Knowledge Management
+   - Technical articles.
+   - FAQs.
+   - Troubleshooting guides.
+   - Search functionality.
+
+7. University Announcement System
+   - Department announcements.
+   - Emergency technical alerts.
+   - Maintenance notifications.
+
+8. SLA Management
+   - Ticket response targets.
+   - Resolution targets.
+   - Escalation rules.
+   - SLA performance reports.
+
+9. Advanced Search
+   - Search tickets.
+   - Search users.
+   - Search faculty.
+   - Search knowledge articles.
+
+10. Feedback and Rating
+   - Five-star rating.
+   - Faculty feedback.
+   - Service satisfaction analytics.
+
+==================================================
+13. MONGODB DATABASE DESIGN
+==================================================
+
+Use MongoDB Atlas.
+
+Create properly structured collections:
+
+- users
+- faculty
+- admin
+- tickets
+- ticket_messages
+- ticket_history
+- notifications
+- departments
+- knowledge_base
+- announcements
+- assets
+- laboratories
+- maintenance
+- feedback
+- audit_logs
+- otp_verifications
+- ai_conversations
+- system_settings
+
+Requirements:
+
+- Proper document relationships using IDs.
+- Unique email indexes.
+- Unique ticket ID indexes.
+- Query optimisation.
+- Pagination.
+- Database validation.
+- Secure access.
+- Error handling.
+
+All dashboards must retrieve their information through real backend APIs.
+
+NEVER insert sample users, sample tickets, fake analytics, hardcoded testimonials, or fake dashboard statistics.
+
+Create attractive empty states when there is no data.
+
+==================================================
+14. SECURITY REQUIREMENTS
+==================================================
+
+Implement:
+
+- JWT authentication.
+- Refresh token mechanism.
+- Role-based permissions.
+- Secure password hashing.
+- Input validation.
+- API rate limiting.
+- CORS configuration.
+- File upload validation.
+- File size restrictions.
+- Secure file storage.
+- SQL injection protection is not applicable to MongoDB, but validate database queries against injection.
+- NoSQL injection protection.
+- XSS protection.
+- CSRF protection where applicable.
+- Secure HTTP headers.
+- Audit logging.
+- Environment variable management.
+- Password reset verification.
+- Account lockout after repeated failed attempts.
+
+Never expose MongoDB credentials, SMTP passwords, JWT secrets, or AI API keys in frontend code.
+
+==================================================
+15. PDF AND EXCEL REPORT GENERATION
+==================================================
+
+Allow administrators and authorised faculty members to generate:
+
+- Ticket reports.
+- Department reports.
+- Faculty performance reports.
+- Monthly analytics.
+- Maintenance reports.
+- University IT asset reports.
+
+Students can download their own ticket reports.
+
+Use Python libraries:
+
+- ReportLab for PDF.
+- OpenPyXL for Excel.
+
+Reports must contain actual database information.
+
+==================================================
+16. PROJECT STRUCTURE AND PYTHON FILE CREATION
+==================================================
+
+Use Python to generate the complete project structure.
+
+Suggested structure:
+
+smart-technical-support-university/
+│
+├── frontend/
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       ├── dashboards/
+│       │   ├── admin/
+│       │   ├── faculty/
+│       │   └── student/
+│       ├── layouts/
+│       ├── hooks/
+│       ├── services/
+│       ├── context/
+│       ├── animations/
+│       ├── styles/
+│       └── App.jsx
+│
+├── backend/
+│   ├── app/
+│   │   ├── api/
+│   │   ├── models/
+│   │   ├── schemas/
+│   │   ├── services/
+│   │   ├── database/
+│   │   ├── middleware/
+│   │   ├── authentication/
+│   │   ├── notifications/
+│   │   ├── email/
+│   │   ├── ai/
+│   │   ├── tickets/
+│   │   ├── reports/
+│   │   └── utils/
+│   ├── tests/
+│   ├── requirements.txt
+│   └── main.py
+│
+├── scripts/
+│   ├── create_project.py
+│   ├── create_admin.py
+│   └── database_indexes.py
+│
+├── .env.example
+├── .gitignore
+├── README.md
+└── docker-compose.yml
+
+Create a Python script named create_project.py.
+
+This script should automatically:
+
+- Create all required directories.
+- Generate frontend and backend files.
+- Create configuration files.
+- Create Python backend modules.
+- Generate React components.
+- Create email templates.
+- Generate environment templates.
+- Create documentation.
+
+Do not create empty placeholder files for important functionality.
+
+Every major feature must have working implementation.
+
+==================================================
+17. ADVANCED DASHBOARD DESIGN
+==================================================
+
+Each dashboard should include:
+
+- Collapsible sidebar.
+- Professional top navigation.
+- Search bar.
+- Notification dropdown.
+- Profile dropdown.
+- Breadcrumb navigation.
+- Animated metric cards.
+- Interactive graphs.
+- Recent activity.
+- Quick action buttons.
+- Responsive layouts.
+
+Use different accent colours for the three dashboards while maintaining one consistent design system.
+
+Admin: Navy + Electric Blue.
+
+Faculty: Deep Purple + Cyan.
+
+Student: Indigo + Emerald.
+
+==================================================
+18. TESTING AND VALIDATION
+==================================================
+
+Create automated tests for:
+
+- Registration.
+- OTP verification.
+- Login.
+- JWT authentication.
+- Role-based access.
+- Ticket generation.
+- Ticket assignment.
+- Ticket status changes.
+- Email delivery integration.
+- Notification delivery.
+- File uploads.
+- MongoDB operations.
+- Report generation.
+
+Ensure:
+
+- No broken navigation.
+- No fake backend responses.
+- No frontend-only functionality presented as working.
+- No console errors.
+- No missing imports.
+- No broken API endpoints.
+
+==================================================
+19. DEPLOYMENT
+==================================================
+
+Prepare the application for deployment.
+
+Frontend:
+- Vercel or Render.
+
+Backend:
+- Render or another Python-compatible hosting platform.
+
+Database:
+- MongoDB Atlas.
+
+Email:
+- SMTP configuration.
+
+Provide:
+
+- requirements.txt
+- package.json
+- .env.example
+- README.md
+- Deployment instructions.
+- MongoDB setup instructions.
+- SMTP setup instructions.
+- Admin account creation instructions.
+
+==================================================
+20. FINAL DEVELOPMENT INSTRUCTIONS
+==================================================
+
+Follow these instructions strictly:
+
+1. Build the complete working application.
+2. Do not create a basic template website.
+3. Prioritise exceptional UI/UX design.
+4. Use Python for backend and automated file creation.
+5. Use MongoDB as the only primary application database.
+6. Implement all three role-based dashboards.
+7. Implement actual email OTP verification for students and faculty.
+8. Never allow public admin registration.
+9. Automatically generate a welcome ticket after successful registration.
+10. Send a personalised welcome email.
+11. Implement real backend-driven dashboard statistics.
+12. Implement real-time notifications.
+13. Implement the AI technical support assistant.
+14. Use responsive glassmorphism and professional animations.
+15. Never use mock data or hardcoded sample records.
+16. Do not leave major functionality as TODO comments.
+17. Do not claim that a feature works unless it has been implemented and tested.
+18. Create a secure admin bootstrap script.
+19. Provide clear installation and execution commands.
+20. Generate the project in manageable development stages.
+
+DEVELOPMENT ORDER:
+
+Stage 1: Python project generator and complete folder structure.
+
+Stage 2: FastAPI backend and MongoDB connection.
+
+Stage 3: Authentication, registration and OTP verification.
+
+Stage 4: Email templates and welcome ticket generation.
+
+Stage 5: Frontend design system and landing page.
+
+Stage 6: Animated login and registration pages.
+
+Stage 7: Admin dashboard.
+
+Stage 8: Faculty dashboard.
+
+Stage 9: Student dashboard.
+
+Stage 10: Ticket management system.
+
+Stage 11: AI technical assistant.
+
+Stage 12: Notifications and real-time communication.
+
+Stage 13: Advanced university modules.
+
+Stage 14: Reports, testing and security.
+
+Stage 15: Deployment and documentation.
+
+Start by generating the complete project architecture and Python file-generation script.
+
+Then implement each stage with actual working code.
+
+The final result must look like a premium university enterprise software platform, not a simple student college project.

@@ -1,0 +1,260 @@
+{
+  "users": [
+    {
+      "id": "usr_admin_master",
+      "email": "admin@stsu.edu",
+      "fullName": "Chief Information Officer",
+      "role": "ADMIN",
+      "department": "Central IT Operations",
+      "designation": "Director of Academic Technology",
+      "phoneNumber": "+1 (555) 019-4400",
+      "passwordHash": "04fbba11b67e9eebb420d64ccea89fb58ea5d7e1c5fed71c6d7d3a67eaff7d9e",
+      "isVerified": true,
+      "isActive": true,
+      "createdAt": "2026-11-06T15:00:00.000Z",
+      "failedLoginAttempts": 0
+    },
+    {
+      "id": "usr_student_1794209581773",
+      "email": "sksawan240@gmail.com",
+      "fullName": "SAWAN HALLI",
+      "role": "STUDENT",
+      "department": "Computer Science & Engineering",
+      "studentId": "SG24BAC312",
+      "course": "B.Tech Computer Science",
+      "yearSemester": "Year 1 / Semester 1",
+      "phoneNumber": "",
+      "passwordHash": "1e1e219a58725c0cca601804dd17fcf97029b760d703d6d466a0333f1398f6e0",
+      "isVerified": true,
+      "isActive": true,
+      "createdAt": "2026-11-09T07:33:01.773Z",
+      "failedLoginAttempts": 0
+    },
+    {
+      "id": "usr_student_1794213529774",
+      "email": "halliramesh5@gmail.com",
+      "fullName": "sawan halli",
+      "role": "STUDENT",
+      "department": "Computer Science & Engineering",
+      "studentId": "SG24BCA132",
+      "course": "B.Tech Computer Science",
+      "yearSemester": "Year 1 / Semester 1",
+      "phoneNumber": "",
+      "passwordHash": "1e1e219a58725c0cca601804dd17fcf97029b760d703d6d466a0333f1398f6e0",
+      "isVerified": true,
+      "isActive": true,
+      "createdAt": "2026-11-09T08:38:49.774Z",
+      "failedLoginAttempts": 0
+    }
+  ],
+  "otps": [
+    {
+      "email": "sksawan240@gmail.com",
+      "otp": "360318",
+      "expiresAt": 1794207827736,
+      "attempts": 5,
+      "payload": {
+        "fullName": "SAWAN HALLI",
+        "role": "STUDENT",
+        "studentId": "SG24BAC132",
+        "department": "Computer Science & Engineering",
+        "course": "BCA",
+        "yearSemester": "Year 1 / Semester 1",
+        "phoneNumber": "9686788311",
+        "passwordHash": "1e1e219a58725c0cca601804dd17fcf97029b760d703d6d466a0333f1398f6e0"
+      }
+    }
+  ],
+  "tickets": [
+    {
+      "ticketId": "STSU-2026-000002",
+      "title": "Onboarding & Academic IT Access Setup for sawan halli",
+      "description": "Automated onboarding ticket created upon student registration. Please verify central credentials, campus Wi-Fi (STSU-Secure), and academic lab allocations for sawan halli (STUDENT).",
+      "category": "Account Access",
+      "priority": "MEDIUM",
+      "status": "OPEN",
+      "createdByUserId": "halliramesh5@gmail.com",
+      "creatorName": "sawan halli",
+      "creatorRole": "STUDENT",
+      "department": "Computer Science & Engineering",
+      "assignedFacultyId": "Central IT Helpdesk",
+      "assignedFacultyName": "Central Support Pool",
+      "createdAt": "2026-11-09T08:38:49.774Z",
+      "updatedAt": "2026-11-09T08:38:49.774Z",
+      "isWelcomeTicket": true,
+      "slaHours": 24,
+      "slaDeadline": "2026-11-10T08:38:49.774Z",
+      "history": [
+        {
+          "action": "TICKET_AUTO_GENERATED",
+          "timestamp": "2026-11-09T08:38:49.774Z",
+          "performedBy": "STSU Automated Registration Engine",
+          "details": "Initial onboarding ticket generated automatically upon registration."
+        }
+      ],
+      "messages": [
+        {
+          "id": "msg_welcome_1794213529774",
+          "senderId": "system@stsu.edu",
+          "senderName": "STSU Central IT Support Engine",
+          "senderRole": "SYSTEM",
+          "message": "Welcome to Smart Technical Support University! Your account has been created. A technical administrator has been notified to ensure your digital campus access is seamless.",
+          "timestamp": "2026-11-09T08:38:49.774Z"
+        }
+      ]
+    },
+    {
+      "ticketId": "STSU-2026-000001",
+      "title": "Onboarding & Academic IT Access Setup for SAWAN HALLI",
+      "description": "Automated onboarding ticket created upon student registration. Please verify central credentials, campus Wi-Fi (STSU-Secure), and academic lab allocations for SAWAN HALLI (STUDENT).",
+      "category": "Account Access",
+      "priority": "MEDIUM",
+      "status": "OPEN",
+      "createdByUserId": "sksawan240@gmail.com",
+      "creatorName": "SAWAN HALLI",
+      "creatorRole": "STUDENT",
+      "department": "Computer Science & Engineering",
+      "assignedFacultyId": "Central IT Helpdesk",
+      "assignedFacultyName": "Central Support Pool",
+      "createdAt": "2026-11-09T07:33:01.773Z",
+      "updatedAt": "2026-11-09T07:33:01.773Z",
+      "isWelcomeTicket": true,
+      "slaHours": 24,
+      "slaDeadline": "2026-11-10T07:33:01.774Z",
+      "history": [
+        {
+          "action": "TICKET_AUTO_GENERATED",
+          "timestamp": "2026-11-09T07:33:01.773Z",
+          "performedBy": "STSU Automated Registration Engine",
+          "details": "Initial onboarding ticket generated automatically upon registration."
+        }
+      ],
+      "messages": [
+        {
+          "id": "msg_welcome_1794209581774",
+          "senderId": "system@stsu.edu",
+          "senderName": "STSU Central IT Support Engine",
+          "senderRole": "SYSTEM",
+          "message": "Welcome to Smart Technical Support University! Your account has been created. A technical administrator has been notified to ensure your digital campus access is seamless.",
+          "timestamp": "2026-11-09T07:33:01.773Z"
+        }
+      ]
+    }
+  ],
+  "departments": [
+    {
+      "id": "dept_01",
+      "name": "Computer Science & Engineering",
+      "code": "CSE",
+      "headOfDepartment": "Department Chair",
+      "supportStaffCount": 0,
+      "activeTicketsCount": 0
+    },
+    {
+      "id": "dept_02",
+      "name": "Information Technology",
+      "code": "IT",
+      "headOfDepartment": "Department Chair",
+      "supportStaffCount": 0,
+      "activeTicketsCount": 0
+    },
+    {
+      "id": "dept_03",
+      "name": "Central IT Infrastructure",
+      "code": "CIT",
+      "headOfDepartment": "Chief Information Officer",
+      "supportStaffCount": 0,
+      "activeTicketsCount": 0
+    },
+    {
+      "id": "dept_04",
+      "name": "Electronics & Communication",
+      "code": "ECE",
+      "headOfDepartment": "Department Chair",
+      "supportStaffCount": 0,
+      "activeTicketsCount": 0
+    }
+  ],
+  "assets": [],
+  "laboratories": [],
+  "classrooms": [],
+  "announcements": [],
+  "auditLogs": [
+    {
+      "id": "log_1794214056047",
+      "action": "USER_LOGIN",
+      "userId": "usr_student_1794209581773",
+      "userEmail": "sksawan240@gmail.com",
+      "details": "Successful login as STUDENT",
+      "timestamp": "2026-11-09T08:47:36.047Z"
+    },
+    {
+      "id": "log_1794213598525",
+      "action": "USER_LOGIN",
+      "userId": "usr_student_1794209581773",
+      "userEmail": "sksawan240@gmail.com",
+      "details": "Successful login as STUDENT",
+      "timestamp": "2026-11-09T08:39:58.525Z"
+    },
+    {
+      "id": "log_1794213573927",
+      "action": "USER_LOGIN",
+      "userId": "usr_student_1794209581773",
+      "userEmail": "sksawan240@gmail.com",
+      "details": "Successful login as STUDENT",
+      "timestamp": "2026-11-09T08:39:33.927Z"
+    },
+    {
+      "id": "log_1794213529774",
+      "action": "USER_REGISTERED",
+      "userId": "usr_student_1794213529774",
+      "userEmail": "halliramesh5@gmail.com",
+      "details": "sawan halli registered account as STUDENT. Auto ticket: STSU-2026-000002",
+      "timestamp": "2026-11-09T08:38:49.774Z"
+    },
+    {
+      "id": "log_1794209581774",
+      "action": "USER_REGISTERED",
+      "userId": "usr_student_1794209581773",
+      "userEmail": "sksawan240@gmail.com",
+      "details": "SAWAN HALLI registered account as STUDENT. Auto ticket: STSU-2026-000001",
+      "timestamp": "2026-11-09T07:33:01.773Z"
+    },
+    {
+      "id": "log_1793981653591",
+      "action": "USER_LOGIN",
+      "userId": "usr_admin_master",
+      "userEmail": "admin@stsu.edu",
+      "details": "Successful login as ADMIN",
+      "timestamp": "2026-11-06T16:14:13.591Z"
+    },
+    {
+      "id": "log_1793980374283",
+      "action": "USER_LOGIN",
+      "userId": "usr_admin_master",
+      "userEmail": "admin@stsu.edu",
+      "details": "Successful login as ADMIN",
+      "timestamp": "2026-11-06T15:52:54.283Z"
+    },
+    {
+      "id": "log_sys_init",
+      "action": "SYSTEM_BOOTSTRAP",
+      "userId": "usr_admin_master",
+      "userEmail": "admin@stsu.edu",
+      "details": "Smart Technical Support University initialized with real administrator credentials.",
+      "timestamp": "2026-11-06T15:00:00.000Z"
+    }
+  ],
+  "systemSettings": {
+    "universityName": "Smart Technical Support University",
+    "supportEmail": "support@stsu.edu",
+    "emergencyExtension": "4400",
+    "allowStudentTicketCreation": true,
+    "slaCriticalHours": 4,
+    "slaHighHours": 12,
+    "slaMediumHours": 24,
+    "slaLowHours": 48,
+    "smtpStatus": "Ready for SMTP Relay"
+  },
+  "ticketSequence": 2
+}
