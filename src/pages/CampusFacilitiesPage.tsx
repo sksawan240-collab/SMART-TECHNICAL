@@ -387,3 +387,4 @@ export const CampusFacilitiesPage: React.FC<CampusFacilitiesProps> = ({ setCurre
     </div>
   );
 };
+

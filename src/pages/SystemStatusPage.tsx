@@ -215,3 +215,4 @@ export const SystemStatusPage: React.FC<SystemStatusProps> = ({ setCurrentView }
     </div>
   );
 };
+

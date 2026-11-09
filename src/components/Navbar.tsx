@@ -33,6 +33,7 @@ import {
   User,
   Database,
   ExternalLink,
+  Building2,
   Flame,
   CheckCircle2,
   AlertTriangle
@@ -142,8 +143,9 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   const navLinks = [
     { id: 'landing', label: 'Overview' },
+    { id: 'facilities', label: 'Campus Facilities' },
     { id: 'knowledge-base', label: 'Knowledge Base' },
-    { id: 'email-preview', label: 'Email Templates' }
+    { id: 'system-status', label: 'System Status' }
   ];
 
   const roleBadge = getRoleBadge();
@@ -151,8 +153,9 @@ export const Navbar: React.FC<NavbarProps> = ({
   // Quick Command Palette search items
   const quickActions = [
     { id: 'landing', title: 'Campus IT Overview', subtitle: 'View real-time telemetry and landing portal', icon: Laptop, category: 'Navigation' },
-    { id: 'knowledge-base', title: 'Knowledge Base & FAQs', subtitle: 'Search self-service solutions and tutorials', icon: HelpCircle, category: 'Support' },
-    { id: 'email-preview', title: 'Email Template Previews', subtitle: 'Inspect automated onboarding & OTP emails', icon: FileText, category: 'Tools' },
+    { id: 'facilities', title: 'Campus Facilities & Labs', subtitle: 'Explore computing laboratories, smart halls, and hardware', icon: Building2, category: 'Infrastructure' },
+    { id: 'knowledge-base', title: 'Knowledge Base & FAQs', subtitle: 'Search self-service solutions and troubleshooting tutorials', icon: HelpCircle, category: 'Support' },
+    { id: 'system-status', title: 'Live System Status & SLAs', subtitle: 'Inspect cloud cluster health, service uptime, and response metrics', icon: Activity, category: 'Operations' },
     ...(user ? [
       { id: `${user.role.toLowerCase()}-dashboard`, title: `${user.role === 'ADMIN' ? 'Administrator Console' : user.role === 'FACULTY' ? 'Faculty Ticket Queue' : 'My Student Tickets'}`, subtitle: 'Open active workspace and incident management', icon: Activity, category: 'Dashboard' }
     ] : [

@@ -164,13 +164,18 @@ export const Footer: React.FC<FooterProps> = ({ setCurrentView }) => {
                 </button>
               </li>
               <li>
-                <button onClick={() => setCurrentView('knowledge-base')} className="hover:text-indigo-600 dark:hover:text-white transition-colors cursor-pointer">
-                  Knowledge Base
+                <button onClick={() => setCurrentView('facilities')} className="hover:text-indigo-600 dark:hover:text-white transition-colors cursor-pointer">
+                  Campus Facilities & Labs
                 </button>
               </li>
               <li>
-                <button onClick={() => setCurrentView('email-preview')} className="hover:text-indigo-600 dark:hover:text-white transition-colors cursor-pointer">
-                  Email Templates Preview
+                <button onClick={() => setCurrentView('knowledge-base')} className="hover:text-indigo-600 dark:hover:text-white transition-colors cursor-pointer">
+                  Knowledge Base & FAQs
+                </button>
+              </li>
+              <li>
+                <button onClick={() => setCurrentView('system-status')} className="hover:text-indigo-600 dark:hover:text-white transition-colors cursor-pointer">
+                  Live System Status & SLAs
                 </button>
               </li>
             </ul>

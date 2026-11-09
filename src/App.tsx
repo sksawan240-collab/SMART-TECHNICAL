@@ -11,7 +11,8 @@ import { AdminDashboard } from './dashboards/admin/AdminDashboard';
 import { FacultyDashboard } from './dashboards/faculty/FacultyDashboard';
 import { StudentDashboard } from './dashboards/student/StudentDashboard';
 import { KnowledgeBasePage } from './pages/KnowledgeBasePage';
-import { EmailPreviewPage } from './pages/EmailPreviewPage';
+import { CampusFacilitiesPage } from './pages/CampusFacilitiesPage';
+import { SystemStatusPage } from './pages/SystemStatusPage';
 import { TicketDetailModal } from './components/TicketDetailModal';
 
 export type AccentColor = 'indigo' | 'emerald' | 'sapphire' | 'violet' | 'amber';
@@ -78,8 +79,9 @@ const AppContent: React.FC = () => {
         {currentView === 'login' && <LoginPage setCurrentView={setCurrentView} />}
         {currentView === 'register' && <RegisterPage setCurrentView={setCurrentView} />}
         {currentView === 'otp-verify' && <OtpVerificationPage setCurrentView={setCurrentView} />}
+        {currentView === 'facilities' && <CampusFacilitiesPage setCurrentView={setCurrentView} />}
         {currentView === 'knowledge-base' && <KnowledgeBasePage />}
-        {currentView === 'email-preview' && <EmailPreviewPage />}
+        {currentView === 'system-status' && <SystemStatusPage setCurrentView={setCurrentView} />}
         
         {/* Role Dashboards */}
         {currentView === 'admin-dashboard' && <AdminDashboard onOpenTicket={handleOpenTicket} />}
